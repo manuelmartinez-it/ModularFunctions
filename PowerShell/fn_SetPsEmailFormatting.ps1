@@ -55,13 +55,13 @@ function Set-PsEmailFormatting {
         [String]
         $BodyHeader,
 
-        # Information to report on
+        # PowerShell Object containint the information to report on
         [Parameter(
             Mandatory,
-            HelpMessage = 'Variable with the infomation you want to report on',
+            HelpMessage = 'PowerShell Object Variable containing the infomation you want to report on',
             ValueFromPipeline = $true
             )]
-        [$PSObject]
+        [PSObject]
         $TableInfo
     )
 
